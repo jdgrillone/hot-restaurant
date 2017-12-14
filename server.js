@@ -29,7 +29,7 @@ app.get("/", function(req, res) {
   res.sendFile(path.join(__dirname, "hot.restaurant.html"));
 });
 
-app.get("/reserve", function(req, res) {
+app.get("/form", function(req, res) {
   res.sendFile(path.join(__dirname, "reserve.html"));
 });
 
