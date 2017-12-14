@@ -30,7 +30,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/form", function(req, res) {
-  res.sendFile(path.join(__dirname, "reserve.html"));
+  res.sendFile(path.join(__dirname, "form.html"));
 });
 
 app.get("/tables", function(req, res) {
