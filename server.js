@@ -102,8 +102,10 @@ app.post("/api/new", function(req, res) {
   console.log(newReservation);
   if (reservations.length < 5) {
     reservations.push(newReservation);
+    return true;
   } else {
     waitList.push(newReservation);
+    return false;
   }
   
 
